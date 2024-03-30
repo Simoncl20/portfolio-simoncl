@@ -1,8 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
+        <section class="w-full lg:w-[740px] mx-auto py-44">
+            <h1
+                class="text-white text-4xl font-bold flex justify-center flex-row gap-x-4"
+            >
+                Hey I'm Simon! <div class="flex justify-center items-center">
+                    <Badge>Available for Work</Badge>
+                </div class="flex justify-center items-center">
+            </h1>
+            <h2>
+                +3 Years of experience. Web Developer & UI | UX Designer. From
+                Bogotá Colombia, Specialized in Create Web Apps
+            </h2>
+        </section>
     </main>
 </Layout>
