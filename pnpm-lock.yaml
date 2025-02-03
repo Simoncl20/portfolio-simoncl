@@ -14,6 +14,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.5
         version: 5.1.5(astro@5.1.10(jiti@1.21.6)(rollup@4.32.1)(typescript@5.6.2)(yaml@2.5.1))(tailwindcss@3.4.10)
+      '@fontsource-variable/ubuntu-sans':
+        specifier: ^5.1.1
+        version: 5.1.1
       astro:
         specifier: ^5.1.10
         version: 5.1.10(jiti@1.21.6)(rollup@4.32.1)(typescript@5.6.2)(yaml@2.5.1)
@@ -264,6 +267,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/ubuntu-sans@5.1.1':
+    resolution: {integrity: sha512-+CPCeQ3BPXVeQQR0fek/r2XhkNx9cFu5vv2pSOA1kx8dxyDlj1iibZVYQNs2ytXxiP6VwtNdRh6g6b2mG+wO3w==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2311,6 +2317,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource-variable/ubuntu-sans@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
