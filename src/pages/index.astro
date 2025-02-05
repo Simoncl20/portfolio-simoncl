@@ -5,10 +5,22 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Simon's Portfolio">
   <main>
-    <h1>Hey, Soy Simón <Badge>Disponible para trabajar</Badge></h1>
-    <h2>
-      +3 Años de experiencia. Desarrollador Web Fullstack y Diseñador UX | UI.
-      De Bogotá, Colombia 🇨🇴. Especializado en crear aplicaciones unicas
-    </h2>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, Soy Simón
+        <a
+          href="https://www.linkedin.com/in/simoncl20/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para traba jar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        +3 Años de experiencia. Desarrollador Web Fullstack y Diseñador UX | UI.
+        De Bogotá, Colombia 🇨🇴. Especializado en crear aplicaciones unicas
+      </h2>
+    </section>
   </main>
 </Layout>
