@@ -1,11 +1,20 @@
 ---
 import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import Github from "../icons/Github.astro";
+import Mail from "../icons/Mail.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Simon's Portfolio">
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <section class="w-full lg:w-[800px] mx-auto py-44">
+      <img
+        class="rounded-full w-20 h-20 mb-5"
+        src="/profile_img.webp"
+        alt="simoncl20-profile"
+      />
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
         Hey, Soy Simón
         <a
@@ -14,13 +23,29 @@ import Layout from "../layouts/Layout.astro";
           rel="noopener noreferrer"
           class="flex justify-center items-center"
         >
-          <Badge>Disponible para traba jar</Badge>
+          <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        +3 Años de experiencia. Desarrollador Web Fullstack y Diseñador UX | UI.
+      <h2 class="text-2xl opacity-80 text-wrap">
+        +3 Años de experiencia. <span class="text-yellow-200/90"
+          >Desarrollador Web Fullstack y Diseñador UX | UI</span
+        >
         De Bogotá, Colombia 🇨🇴. Especializado en crear aplicaciones unicas
       </h2>
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill link="https://www.linkedin.com/in/simoncl20/">
+          <Linkedin class="w-6 h-6" />
+          Linkedin
+        </SocialPill>
+        <SocialPill link="https://github.com/Simoncl20">
+          <Github class="w-6 h-6" />
+          Github
+        </SocialPill>
+        <SocialPill link="mailto:simoncalderonl2010@gmail.com">
+          <Mail class="w-6 h-6" />
+          simoncalderonl2010@gmail.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
